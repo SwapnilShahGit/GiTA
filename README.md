@@ -1,4 +1,4 @@
-# GiTA 
+# GiTA
 
 ## Task Designation
 Highest Priority
@@ -50,7 +50,7 @@ Low Priority
   ```
 
 2. Configure server settings and SSL Certification
-  
+
 
 ## Contact
 

@@ -1,0 +1,22 @@
+{
+  "name": "GiTA",
+  "version": "1.0.0",
+  "description": "A Git Tool for Students",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": "https://github.com/SwapnilShahGit/GiTA",
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
+  ],
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "~1.7.8"
+  }
+}
