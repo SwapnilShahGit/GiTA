@@ -13,6 +13,12 @@ body {
   float: left;
   height: 430px;
   z=index:-1;
+}
+
+#wrapper {
+  width: 650px;
+  float: left;
+  height: 430px;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -168,10 +174,6 @@ p a:hover {
 .file-upload-button:hover {
   background-color: #306a9c;
 }
-
-
-
-
 
 @keyframes undash {
   100% {

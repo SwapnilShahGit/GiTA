@@ -172,3 +172,35 @@ document.querySelectorAll('.low-mid').forEach(function(el, i){
 }(jQuery));
 
 $('input[type=file]').customFile();
+      len = el.get(0).getTotalLength() + 1;
+    }
+    
+    el.css({
+      strokeDasharray:len, 
+      strokeDashoffset:len, 
+      animation: 'undash '+duration+'s '+delay+'s forwards'
+    });
+  }
+};
+
+
+$('.middle').each(function(i, el){
+  tools.setDashStyles($(el), parseInt($(el).data('order')), 0);
+});
+
+ $('.top').each(function(i, el){
+   tools.setDashStyles($(el), i, 0);
+ });
+
+  $('.bottom').each(function(i, el){
+   tools.setDashStyles($(el), i, 0);
+ });
+
+
+$('.low-mid').each(function(i, el){
+  tools.setDashStyles($(el), i, 3);
+});
+
+setTimeout(function(){
+  $('.social-icon').fadeIn();
+}, 4000)
