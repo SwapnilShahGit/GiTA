@@ -1,0 +1,57 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #00204E;
+}
+
+#wrapper {
+  width: 650px;
+  float: left;
+  height: 430px;
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.cls-1 {
+  fill: none;
+  stroke: #ffffff;
+  stroke-miterlimit: 10;
+  stroke-width: 6px;
+}
+
+.low-mid {
+	stroke: #4f90c9;
+}
+
+.middle {
+  stroke: #377BB5;
+}
+
+.top {
+	stroke: #306a9c;
+
+}
+.bottom {
+	  stroke: #8ab5db;
+}
+
+.share-circle {
+  stroke: #d8e6f3;
+}
+
+.top {
+  z-index: 5;
+}
+
+.middle {
+  z-index: 255;
+}
+
+@keyframes undash {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}

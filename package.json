@@ -3,7 +3,17 @@
     "version": "1.0.0",
     "description": "A Git Tool for Students",
     "main": "main.js",
+    "scripts": {
+      "start": "electron ."
+    },
     "repository": "https://github.com/SwapnilShahGit/GiTA",
+    "keywords": [
+      "Electron",
+      "quick",
+      "start",
+      "tutorial",
+      "demo"
+    ],
     "devDependencies": {
         "electron": "~1.7.8",
         "electron-rebuild": "^1.7.3"
