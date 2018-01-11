@@ -12,6 +12,7 @@ var tools = {
     var len = 0;
     var duration = .4;
     var delay = i * (duration - .1) + addDelay;
+    console.log(i);
     if(type === 'line'){
       len = this.getLineLength(el) + 1;
     }else if(type === 'circle'){
@@ -174,33 +175,32 @@ document.querySelectorAll('.low-mid').forEach(function(el, i){
 $('input[type=file]').customFile();
       len = el.get(0).getTotalLength() + 1;
     }
-    
-    el.css({
-      strokeDasharray:len, 
-      strokeDashoffset:len, 
-      animation: 'undash '+duration+'s '+delay+'s forwards'
-    });
+
+    el.style.strokeDasharray = len;
+    el.style.strokeDashoffset = len;
+    el.style.animation = 'undash '+duration+'s '+delay+'s forwards';
   }
 };
+ console.log("foo");
 
+// document.querySelectorAll('.middle').forEach(function(el, i){
+//   tools.setDashStyles(el, parseInt(el.data('order')), 0);
+// });
 
-$('.middle').each(function(i, el){
-  tools.setDashStyles($(el), parseInt($(el).data('order')), 0);
-});
-
- $('.top').each(function(i, el){
-   tools.setDashStyles($(el), i, 0);
+ document.querySelectorAll('.top').forEach(function(el, i){
+   tools.setDashStyles(el, i, 0);
  });
 
-  $('.bottom').each(function(i, el){
-   tools.setDashStyles($(el), i, 0);
+  document.querySelectorAll('.bottom').forEach(function(el, i){
+   tools.setDashStyles(el, i, 0);
  });
 
 
-$('.low-mid').each(function(i, el){
-  tools.setDashStyles($(el), i, 3);
+document.querySelectorAll('.low-mid').forEach(function(el, i){
+  tools.setDashStyles(el, i, 3);
 });
 
 setTimeout(function(){
   $('.social-icon').fadeIn();
 }, 4000)
+
