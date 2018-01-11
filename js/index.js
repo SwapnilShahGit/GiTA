@@ -28,9 +28,9 @@ var tools = {
 };
  console.log("foo");
 
-// document.querySelectorAll('.middle').forEach(function(el, i){
-//   tools.setDashStyles(el, parseInt(el.data('order')), 0);
-// });
+document.querySelectorAll('.middle').forEach(function(el, i){
+  tools.setDashStyles(el, parseInt(el.getAttribute('data-order')), 0);
+});
 
  document.querySelectorAll('.top').forEach(function(el, i){
    tools.setDashStyles(el, i, 0);
