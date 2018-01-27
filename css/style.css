@@ -20,6 +20,7 @@ body {
   width: 650px;
   float: left;
   height: 430px;
+  z=index:-1;
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -o-transform: rotate(180deg);
@@ -40,6 +41,7 @@ body {
     padding-left:250px;
     padding-top:200px;
     position:absolute;
+    z-index: 1;
 }
 
 #logo {
