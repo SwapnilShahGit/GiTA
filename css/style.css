@@ -16,6 +16,7 @@ body {
 }
 
 #wrapper {
+  padding-bottom: 135px;
   width: 650px;
   float: left;
   height: 430px;
@@ -32,6 +33,13 @@ body {
       padding-top: 533px;
       user-select: none;
 
+}
+
+#choosefile{
+    text-align: center;
+    padding-left:250px;
+    padding-top:200px;
+    position:absolute;
 }
 
 #logo {
@@ -174,7 +182,6 @@ p a:hover {
 .file-upload-button:hover {
   background-color: #306a9c;
 }
-
 @keyframes undash {
   100% {
     stroke-dashoffset: 0;
