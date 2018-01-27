@@ -5,6 +5,7 @@ body {
 }
 
 #wrapper {
+  padding-bottom: 135px;
   width: 650px;
   float: left;
   height: 430px;
@@ -15,6 +16,26 @@ body {
   transform: rotate(180deg);
 }
 
+#uoft{
+  position:absolute;
+      padding-left: 520px;
+      padding-top: 533px;
+      user-select: none;
+
+}
+#choosefile{
+    text-align: center;
+    padding-left:250px;
+    padding-top:200px;
+    position:absolute;
+}
+#logo {
+  text-align: center;
+  padding-top: 80px;
+  padding-left: 200px;
+  position:absolute;
+  user-select: none;
+}
 .cls-1 {
   fill: none;
   stroke: #ffffff;
@@ -49,6 +70,8 @@ body {
 .middle {
   z-index: 255;
 }
+
+
 
 @keyframes undash {
   100% {
