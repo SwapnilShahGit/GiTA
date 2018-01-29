@@ -74,7 +74,6 @@ ipcMain.on('openFile', (event, path) => {
          readFile(fileNames[0]);
       }
    });
-
    function readFile(filepath) {
       fs.readFile(filepath, 'utf-8', (err, data) => {
 
@@ -88,4 +87,5 @@ ipcMain.on('openFile', (event, path) => {
       })
    }
 })
+
 
