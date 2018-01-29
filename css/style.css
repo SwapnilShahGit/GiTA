@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
 body {
   padding: 0;
   margin: 0;
   background: #00204E;
+  -webkit-app-region: drag;
 }
 
 #wrapper {
@@ -24,13 +27,7 @@ body {
       user-select: none;
 
 }
-#choosefile{
-    text-align: center;
-    padding-left:250px;
-    padding-top:200px;
-    position:absolute;
-    z-index: 1;
-}
+
 #logo {
   text-align: center;
   padding-top: 80px;
@@ -72,6 +69,107 @@ body {
 .middle {
   z-index: 255;
 }
+
+h1 {
+  font-weight: normal;
+  font-size: 40px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+h1 span {
+  font-size: 13px;
+  display: block;
+  padding-left: 4px;
+}
+
+
+p a {
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: #b83729;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+}
+p a:hover {
+  background-color: #ab3326;
+}
+
+.custom-file-upload-hidden {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  left: -9999px;
+}
+
+.custom-file-upload {
+  display: block;
+  width: auto;
+  font-size: 16px;
+  margin-top: 30px;
+  text-align: center;
+    padding-left:150px;
+    padding-top:200px;
+    position:absolute;
+    z-index: 1;
+}
+.custom-file-upload label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.file-upload-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+}
+
+.file-upload-input {
+  width: 250px;
+  color: #095F0A;
+  font-size: 16px;
+  padding: 11px 17px;
+  border: none;
+  background-color: #d8e6f3;
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  float: left;
+  /* IE 9 Fix */
+}
+.file-upload-input:hover, .file-upload-input:focus {
+  background-color: #d8e6f3;
+  outline: none;
+}
+
+.file-upload-button {
+  cursor: pointer;
+  display: inline-block;
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 11px 20px;
+  border: none;
+  margin-left: -1px;
+  background-color: #377BB5;
+  float: left;
+  /* IE 9 Fix */
+  -moz-transition: all 0.2s ease-in;
+  -o-transition: all 0.2s ease-in;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+
+}
+.file-upload-button:hover {
+  background-color: #306a9c;
+}
+
+
 
 
 
