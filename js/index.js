@@ -12,7 +12,6 @@ var tools = {
     var len = 0;
     var duration = .4;
     var delay = i * (duration - .1) + addDelay;
-    console.log(i);
     if(type === 'line'){
       len = this.getLineLength(el) + 1;
     }else if(type === 'circle'){
@@ -26,7 +25,6 @@ var tools = {
     el.style.animation = 'undash '+duration+'s '+delay+'s forwards';
   }
 };
- console.log("foo");
 
 document.querySelectorAll('.middle').forEach(function(el, i){
   tools.setDashStyles(el, parseInt(el.getAttribute('data-order')), 0);
