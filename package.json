@@ -17,11 +17,13 @@
   "author": "",
   "license": "",
   "devDependencies": {
-    "electron": "~1.7.8",
+    "electron": "1.7.11",
     "electron-rebuild": "^1.7.3"
   },
   "dependencies": {
     "express": "^4.16.2",
+    "getopts": "^2.0.0",
+    "keycode-js": "^1.0.0",
     "node-pty": "^0.7.4",
     "xterm": "^3.0.2"
   }
