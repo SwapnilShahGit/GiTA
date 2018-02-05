@@ -12,7 +12,6 @@ var tools = {
     var len = 0;
     var duration = .4;
     var delay = i * (duration - .1) + addDelay;
-    console.log(i);
     if(type === 'line'){
       len = this.getLineLength(el) + 1;
     }else if(type === 'circle'){
