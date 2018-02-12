@@ -332,3 +332,4 @@ setTimeout(function(){
 }(jQuery));
 
 $('input[type=file]').customFile();
+
