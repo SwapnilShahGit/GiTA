@@ -1,0 +1,47 @@
+body {
+  padding: 0;
+  margin: 0;
+  background: #002F8E;
+}
+ 
+#wrapper {
+  width: 1000px;
+   float: right;
+  
+   margin-top: 55px;
+} 
+
+.cls-1{fill:none;stroke:#ededed;stroke-miterlimit:10;stroke-width:6px;}
+ 
+.social-icon{
+  font-size: 36px;
+  display: none;
+   
+  
+  
+  
+  fill: #ededed;
+}
+
+.top, .low-mid, .middle{
+  stroke: #768ebe;
+}
+.share-circle{
+  stroke: #ededed;
+}
+
+.top{
+  z-index: 5;
+}
+.middle {
+  z-index: 255;
+}
+
+@keyframes undash {
+  100%{
+    stroke-dashoffset: 0;
+  }
+}
+
+
+
